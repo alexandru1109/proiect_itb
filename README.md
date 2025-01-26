@@ -18,7 +18,6 @@ anvil
 
 ### 4. Ethereum Contract build & deploy
 
-cd eth-contract
 forge create src/BridgeToken.sol:IBT --rpc-url http://127.0.0.1:8545 --private-key <YOUR_PRIVATE_KEY> --broadcast
 
 ### 5. SUI Localchain start & get coins
@@ -27,7 +26,6 @@ RUST_LOG="off,sui_node=info" sui start --with-faucet --force-regenesis
 sui client faucet
 
 ### 6. SUI Contract build & deploy
-cd sui_contract
 sui move build
 sui client publish --gas-budget 100000000
 
